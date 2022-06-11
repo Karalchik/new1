@@ -7,6 +7,8 @@ document.querySelector("#btn").addEventListener("click", function()
     if(request.status==200)
     {
         console.log(request.responseText)
-        document.querySelector("#result").innerHTML=(JSON.parse(request.responseText)).name
+        console.log(JSON.parse(request.responseText))
+        document.querySelector("#res").innerHTML=(JSON.parse(request.responseText)).name
+        
     }
 })
